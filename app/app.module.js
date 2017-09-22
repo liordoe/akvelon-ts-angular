@@ -20,6 +20,7 @@ var modal_component_1 = require("./helpers/modals/modal.component");
 var app_routing_1 = require("./app.routing");
 var user_service_1 = require("./services/user.service");
 var modal_service_1 = require("./services/modals/modal.service");
+core_1.enableProdMode();
 var AppModule = (function () {
     function AppModule() {
     }

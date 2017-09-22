@@ -2,8 +2,9 @@
   "name": "helloapp",
   "version": "1.0.0",
   "scripts": {
-    "start": "concurrently \"npm run tsc:w\" \"npm run lite\" ",
+    "start": "concurrently \"npm run less\" \"npm run tsc:w\" \"npm run lite\" ",
     "lite": "lite-server",
+    "less": "lessc app/app.less app/app.css",
     "tsc": "tsc",
     "tsc:w": "tsc -w"
   },
@@ -20,6 +21,7 @@
     "@types/underscore": "^1.8.3",
     "angular-in-memory-web-api": "~0.3.0",
     "core-js": "^2.4.1",
+    "less": "^2.7.2",
     "rxjs": "5.0.1",
     "systemjs": "0.19.40",
     "zone.js": "^0.8.4"
@@ -29,5 +31,11 @@
     "concurrently": "^3.2.0",
     "lite-server": "^2.2.2",
     "typescript": "~2.3.4"
+  },
+  "jspm": {
+    "dependencies": {
+      "ts": "github:frankwallis/plugin-typescript@^7.1.0"
+    },
+    "devDependencies": {}
   }
 }

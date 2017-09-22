@@ -1,4 +1,4 @@
-import { NgModule }      from '@angular/core';
+import { NgModule, enableProdMode }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule }    from '@angular/forms';
 import { HttpModule } from '@angular/http';
@@ -15,6 +15,8 @@ import { routing }        from './app.routing';
 
 import { UserService } from './services/user.service';
 import { ModalService } from './services/modals/modal.service';
+
+enableProdMode();
 
 @NgModule({
     imports: [
